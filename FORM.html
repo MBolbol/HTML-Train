@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title> FORM chapter </title>
+
+</head>
+
+<body>
+    <form action="" method="get" novalidate target="_blank">
+        <input type="hidden" value="mostafa">
+        <div>
+            <label>UserName</label>
+            <br>
+            <input type="text" required placeholder="UserName" name="User" value="Mostafa" readonly>
+        </div>
+        <br>
+        <div>
+            <label>password</label>
+            <br>
+            <input type="password" required placeholder="write a complex password" name="pass" autofocus minlength="5"
+                maxlength="15">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <br>
+            <input type="email" required placeholder="Your Email" value="mm@google.com" name="Email" disabled>
+        </div>
+        <div>
+            <label>color</label>
+            <br>
+            <input type="color" name="color">
+
+        </div>
+        <div>
+            <label>Range</label>
+            <br>
+            <input type="range" required name="range" min="0" max="100" step="10">
+        </div>
+        <div>
+            <label>Number</label>
+            <br>
+            <input type="Number" required name="number" value="50" step="10">
+        </div>
+        <hr>
+        <div>
+            <input id="win" type="radio" name="os" value="Windows" checked>
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input id="ln" type="radio" name="os" value="Linux">
+            <label for="ln">Linux</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="os" value="Mac">
+            <label for="mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input id="math" type="checkbox" name="subject" value="Math" checked>
+            <label for="math">Math</label>
+        </div>
+        <div>
+            <input id="ar" type="checkbox" name="subject" value="Arabic">
+            <label for="ar">Arabic</label>
+        </div>
+        <div>
+            <input id="en" type="checkbox" name="subject" value="English">
+            <label for="en">English</label>
+        </div>
+        <hr>
+        <label for="book">Choose Book</label>
+        <select name="book" id="book" multiple>
+            <optgroup label="romantic books">
+                <option value="1">book1</option>
+                <option value="2">book2</option>
+                <option value="3">book3</option>
+            </optgroup>
+            <optgroup label="police books">
+                <option value="4">book4</option>
+                <option value="5">book5</option>
+                <option value="6">book6</option>
+            </optgroup>
+
+        </select>
+        <hr>
+        <label for="club">Clubs</label>
+        <br>
+        <textarea name="Clubs" id="club" cols="30" rows="10"></textarea>
+        <hr>
+
+        <div>
+            <label>upload</label>
+            <input type="file">
+        </div>
+        <hr>
+
+        <div>
+            <label>search</label>
+            <input type="search">
+        </div>
+        <hr>
+
+        <div>
+            <label>URL</label>
+            <input type="url">
+        </div>
+        <hr>
+
+        <div>
+            <label>Date</label>
+            <input type="date">
+        </div>
+        <hr>
+
+        <div>
+            <label>Programing Language</label>
+            <input list="Programing" name="prog">
+            <datalist id="Programing">
+                <option value="python">
+                <option value="html">
+                <option value="css">
+                <option value="js">
+
+            </datalist>
+        </div>
+        <br>
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
